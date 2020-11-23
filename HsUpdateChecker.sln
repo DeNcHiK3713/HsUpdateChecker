@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HsUpdateChecker", "HsUpdateChecker\HsUpdateChecker.csproj", "{335D5F6A-D5C3-4F7B-99DD-BBEE49B10A6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{335D5F6A-D5C3-4F7B-99DD-BBEE49B10A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335D5F6A-D5C3-4F7B-99DD-BBEE49B10A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335D5F6A-D5C3-4F7B-99DD-BBEE49B10A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335D5F6A-D5C3-4F7B-99DD-BBEE49B10A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB22CA29-6270-40F6-945B-8FE422524195}
+	EndGlobalSection
+EndGlobal
