@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,6 +9,7 @@
     <PackageReference Include="CsvHelper" Version="16.1.0" />
     <PackageReference Include="Discord.Net" Version="2.2.0" />
     <PackageReference Include="Telegram.Bot" Version="15.7.1" />
+      <ProjectReference Include="..\CascLib\CascLib\CascLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
