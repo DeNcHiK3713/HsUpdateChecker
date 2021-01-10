@@ -51,12 +51,9 @@ namespace HsUpdateChecker
         public void SetSection<T>(T data) where T : new()
         {
             var s = sections.OfType<T>().SingleOrDefault();
-            if (s != null)
-            {
-                sections.Remove(s);
-            }
+            sections?.Remove(s);
             sections.Add(data);
-            provider.SetSection<T>(data);
+            provider.SetSection(data);
         }
 
         private void LoadSettings()

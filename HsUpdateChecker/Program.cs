@@ -37,8 +37,8 @@ namespace HsUpdateChecker
                 updateFile = pc || android;
                 if (updateFile)
                 {
-                    TelegramBotClient tgClient = new TelegramBotClient(Settings.TgToken);
-                    DiscordWebhookClient dsClient = new DiscordWebhookClient(Settings.DsWebhookId, Settings.DsWebhookToken);
+                    var tgClient = new TelegramBotClient(Settings.TgToken);
+                    var dsClient = new DiscordWebhookClient(Settings.DsWebhookId, Settings.DsWebhookToken);
                     if (pc)
                     {
                         var message = $"🆕New version released\n⚔️Platform: PC🖥️\n#️⃣Version: {pcInfo.VersionsName}\n🆔BuildId: {pcInfo.BuildId}";
