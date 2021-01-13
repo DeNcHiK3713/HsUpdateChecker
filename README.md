@@ -8,10 +8,14 @@
 3. Edit settings in appsettings.json.
 4. Create new service:
 
-Run command: ```sudo nano /etc/systemd/system/HsUpdateChecker.service```
+Run command: 
+```bash
+sudo nano /etc/systemd/system/HsUpdateChecker.service
+```
 
 then paste following into nano:
-```[Unit]
+```bash
+[Unit]
 Description=HsUpdateChecker service
 Wants=network-online.target
 After=network-online.target nss-lookup.target
@@ -28,10 +32,14 @@ then press ctrl+s, then ctrl+x.
 
 5. Create new timer:
 
-Run command: ```sudo nano /etc/systemd/system/HsUpdateChecker.timer```
+Run command:
+```bash
+sudo nano /etc/systemd/system/HsUpdateChecker.timer
+```
 
 then paste folowing into nano:
-```[Unit]
+```bash
+[Unit]
 Description=Execute HsUpdateChecker every 15 minutes
 
 [Timer]
@@ -43,7 +51,10 @@ WantedBy=multi-user.target
 ```
 then press ctrl+s, then ctrl+x.
 
-6. Enable timer by tuping following command: ```sudo systemctl enable HsUpdateChecker.timer```
+6. Enable timer by tuping following command:
+```bash
+sudo systemctl enable HsUpdateChecker.timer
+```
 ### Windows:
 1. Download latest release [here](https://github.com/DeNcHiK3713/HsUpdateChecker/releases/latest/download/HsUpdateChecker.zip "here").
 2. Unzip somewhere.
