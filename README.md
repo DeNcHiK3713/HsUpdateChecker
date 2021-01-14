@@ -18,7 +18,7 @@ then paste following into nano:
 [Unit]
 Description=HsUpdateChecker service
 Wants=network-online.target
-After=network-online.target nss-lookup.target
+After=network-online.target systemd-networkd-wait-online.service
 
 [Service]
 Type=exec
