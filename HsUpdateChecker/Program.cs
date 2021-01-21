@@ -31,7 +31,7 @@ namespace HsUpdateChecker
                     var dsClient = new DiscordWebhookClient(Settings.DsWebhookId, Settings.DsWebhookToken);
                     if (pc)
                     {
-                        var message = $"🆕New version released\n⚔️Platform: PC🖥️\n#️⃣Version: {pcConfig.VersionName}\n🆔BuildId: {pcConfig.ActiveBuild}";
+                        var message = $"🆕New version released\n⚔️Platform: PC🖥️\n#️⃣Version: {pcConfig.VersionName}\n🆔BuildId: {pcConfig.BuildId}";
                         var tasks = new List<Task>();
                         tasks.Add(tgClient.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(Settings.TgChatId), message));
                         tasks.Add(dsClient.SendMessageAsync(message));
@@ -46,7 +46,7 @@ namespace HsUpdateChecker
                     }
                     if (android)
                     {
-                        var message = $"🆕New version released\n⚔️Platform: Android📱\n#️⃣Version: {androidConfig.VersionName}\n🆔BuildId: {androidConfig.ActiveBuild}";
+                        var message = $"🆕New version released\n⚔️Platform: Android📱\n#️⃣Version: {androidConfig.VersionName}\n🆔BuildId: {androidConfig.BuildId}";
                         var tasks = new List<Task>();
                         tasks.Add(tgClient.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(Settings.TgChatId), message));
                         tasks.Add(dsClient.SendMessageAsync(message));
