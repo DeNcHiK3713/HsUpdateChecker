@@ -47,7 +47,7 @@ OnCalendar=*:0/15
 Unit=HsUpdateChecker.service
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=timers.target
 ```
 then press ctrl+s, then ctrl+x.
 
