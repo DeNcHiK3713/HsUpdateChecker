@@ -24,9 +24,6 @@ After=network-online.target systemd-networkd-wait-online.service
 Type=exec
 WorkingDirectory=/home/user/HsUpdateChecker
 ExecStart=/usr/bin/dotnet /home/user/HsUpdateChecker/HsUpdateChecker.dll
-
-[Install]
-WantedBy=multi-user.target
 ```
 then press ctrl+s, then ctrl+x.
 
