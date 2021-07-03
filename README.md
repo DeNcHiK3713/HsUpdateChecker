@@ -51,6 +51,7 @@ then press ctrl+s, then ctrl+x.
 6. Enable timer by tuping following command:
 ```bash
 sudo systemctl enable HsUpdateChecker.timer
+sudo systemctl start HsUpdateChecker.timer
 ```
 ### Windows:
 1. Download latest release [here](https://github.com/DeNcHiK3713/HsUpdateChecker/releases/latest/download/HsUpdateChecker.zip "here").
