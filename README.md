@@ -24,9 +24,6 @@ After=network-online.target systemd-networkd-wait-online.service
 Type=exec
 WorkingDirectory=/home/user/HsUpdateChecker
 ExecStart=/usr/bin/dotnet /home/user/HsUpdateChecker/HsUpdateChecker.dll
-
-[Install]
-WantedBy=multi-user.target
 ```
 then press ctrl+s, then ctrl+x.
 
@@ -47,13 +44,14 @@ OnCalendar=*:0/15
 Unit=HsUpdateChecker.service
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=timers.target
 ```
 then press ctrl+s, then ctrl+x.
 
 6. Enable timer by tuping following command:
 ```bash
 sudo systemctl enable HsUpdateChecker.timer
+sudo systemctl start HsUpdateChecker.timer
 ```
 ### Windows:
 1. Download latest release [here](https://github.com/DeNcHiK3713/HsUpdateChecker/releases/latest/download/HsUpdateChecker.zip "here").
