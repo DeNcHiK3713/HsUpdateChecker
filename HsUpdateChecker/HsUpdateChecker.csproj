@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="16.1.0" />
     <PackageReference Include="Discord.Net" Version="2.2.0" />
+    <PackageReference Include="GooglePlayStoreApi" Version="1.0.7" />
     <PackageReference Include="Telegram.Bot" Version="15.7.1" />
       <ProjectReference Include="..\CascLib\CascLib\CascLib.csproj" />
   </ItemGroup>

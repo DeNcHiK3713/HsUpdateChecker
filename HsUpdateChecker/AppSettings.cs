@@ -10,8 +10,10 @@ namespace HsUpdateChecker
         public long TgChatId { get; set; }
         public ulong DsWebhookId { get; set; }
         public string DsWebhookToken { get; set; }
-        public string FileName { get; set; }
         public string FilePath { get; set; }
         public string SavePath { get; set; }
+        public string Email { get; set; }
+        public string AndroidId { get; set; }
+        public string GoogleToken { get; set; }
     }
 }
